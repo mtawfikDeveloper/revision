@@ -1,13 +1,14 @@
-n = input("enter number : ")
+while True:
+    n = input("enter number : ")
 
-if (n == "x"):
-    print("close game")
-
-try:
-    n = int(n)
-    if n >= 10:
+    if (n == "x"):
+        print("close game")
+        break
+    try:
+      n = int(n)
+      if n >= 10:
         print("success ")
-    else:
+      else:
         print("fail ")
-except ValueError:
-    print("enter valid number")
+    except ValueError:
+      print("enter valid number")
